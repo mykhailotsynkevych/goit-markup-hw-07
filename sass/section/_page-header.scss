@@ -57,22 +57,21 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
-
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+        cursor: pointer;
+    }
 }
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-    cursor: pointer;
-}
+
 
 .main-nav__link--current-page {
     color: var(--accent-color);
-}
 
-.main-nav__link--current-page::after {
+    &::after {
     position: absolute;
     bottom: 0;
     display: block;
@@ -83,6 +82,9 @@
     background-color: var(--accent-color);
     border-radius: 2px;
 }
+}
+
+
 
 .page-header__contact {
     display: flex;
@@ -109,14 +111,16 @@
     line-height: 1.15;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.page-header__link:hover,
-.page-header__link:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
     cursor: pointer;
+    }
 }
+
+
 
 .page-header__icon {
     fill: currentColor;
